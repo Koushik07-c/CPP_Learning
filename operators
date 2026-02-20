@@ -58,6 +58,26 @@ int main()
     cout << "Post-decrement b--: " << b-- << endl;
     cout << "After post-decrement: " << b << endl;
 
-    
+    // 6. Bitwise Operators
+    cout << "\nBitwise Operators:" << endl;
+    cout << "a & b: " << (a & b) << endl;
+    cout << "a | b: " << (a | b) << endl;
+    cout << "a ^ b: " << (a ^ b) << endl;
+    cout << "~a: " << (~a) << endl;
+    cout << "a << 1: " << (a << 1) << endl;
+    cout << "a >> 1: " << (a >> 1) << endl;
+
+    // 7. Conditional (Ternary) Operator
+    cout << "\nConditional Operator:" << endl;
+    int max = (a > b) ? a : b;
+    cout << "Maximum value: " << max << endl;
+
+    // 8. sizeof Operator
+    cout << "\nSizeof Operator:" << endl;
+    cout << "Size of int: " << sizeof(int) << " bytes" << endl;
+    cout << "Size of float: " << sizeof(float) << " bytes" << endl;
+    cout << "Size of char: " << sizeof(char) << " bytes" << endl;
+
+
     return 0;
 }
