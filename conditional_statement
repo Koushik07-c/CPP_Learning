@@ -1,0 +1,56 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num, marks, choice;
+
+    // User input
+    cout << "Enter a number: ";
+    cin >> num;
+
+    // 1. Simple if statement
+    cout << "\n1. Simple if statement:\n";
+    if (num > 0)
+    {
+        cout << "Number is positive" << endl;
+    }
+
+    // 2. if-else statement
+    cout << "\n2. if-else statement:\n";
+    if (num % 2 == 0)
+        cout << "Number is even" << endl;
+    else
+        cout << "Number is odd" << endl;
+
+    // 3. else-if ladder
+    cout << "\nEnter your marks: ";
+    cin >> marks;
+
+    cout << "\n3. else-if ladder:\n";
+    if (marks >= 90)
+        cout << "Grade: A" << endl;
+    else if (marks >= 75)
+        cout << "Grade: B" << endl;
+    else if (marks >= 50)
+        cout << "Grade: C" << endl;
+    else
+        cout << "Fail" << endl;
+
+    // 4. Nested if
+    cout << "\n4. Nested if:\n";
+    if (num > 0)
+    {
+        if (num > 100)
+            cout << "Number is greater than 100" << endl;
+        else
+            cout << "Number is positive but <= 100" << endl;
+    }
+    else
+    {
+        cout << "Number is not positive" << endl;
+    }
+
+    
+    return 0;
+}
