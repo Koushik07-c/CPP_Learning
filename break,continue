@@ -20,7 +20,15 @@ int main()
             continue;   // skips remaining code for this iteration
         }
 
-        
+        // BREAK example (stop loop at 8)
+        if(i == 8)
+        {
+            cout << "Break executed at i = " << i << endl;
+            break;   // terminates the loop
+        }
+
+        cout << "Value of i: " << i << endl;
+    }
 
     return 0;
 }
